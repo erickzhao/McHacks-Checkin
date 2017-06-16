@@ -1,45 +1,60 @@
 <html>
-   <head>
-      <meta name=viewport content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
-      <link href="css/global.css" rel="stylesheet" type="text/css" />
-   </head>
-   <body>
-      <div class="dont-print">
-         <canvas id="labelCanvas" width="520" height="299" style="border-style: none; display: none;"></canvas>
-         <p class="header-text">Check-In</p>
-         <div class="ui icon input sb">
-            <input type="text" id="query" placeholder="Name or Email or Team">
-            <i class="search icon"></i>
-         </div>
-         <div class="search-results">
-            <div class="ui relaxed divided items" id="results">
-               <!-- <div class="item">
-                  <div class="content">
-                      <a class="header">${Name}</a>
-                      <div class="meta">
-                          ${School}
-                      </div>
-                      <div class="extra">
-                          <div class="ui right floated primary button">
-                              Print Label
-                              <i class="right chevron icon"></i>
-                          </div>
-                      </div>
-                  </div>
-                  </div> -->
+  <head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="dont-print">
+      <canvas id="labelCanvas" width="520" height="299" style="border-style: none; display: none;"></canvas>
+      <p class="header-text">Check-In</p>
+      <table border="0" class="wth">
+        <tr>
+          <td>
+            <div class="ui icon input sb">
+              <input type="text" id="query" placeholder="Name or Email or Team">
+              <i class="search icon"></i>
             </div>
-         </div>
+          </td>
+          <td>
+            <button class="ui icon button upload-image">
+              <i class="photo icon"></i>
+            </button>
+          </td>
+        </tr>
+      </table>
+      <div class="hiddenfile">
+          <input class="hide" id="image-input" type="file" accept="image/*">
       </div>
-      <img class="to-print" src="" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
-      <script src="lib/jwt-decode.min.js"></script>
-      <script src="js/config.js"></script>
-      <script src="js/api.js"></script>
-      <script src="js/index.js"></script>
-   </body>
+      <div class="search-results">
+        <div class="ui relaxed divided items" id="results">
+          <!-- <div class="item">
+            <div class="content">
+              <a class="header">${Name}</a>
+              <div class="meta">
+                ${School}
+              </div>
+              <div class="extra">
+                <div class="ui right floated primary button">
+                  Print Label
+                  <i class="right chevron icon"></i>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <img class="to-print" src="" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.3/js.cookie.min.js"></script>
+    <script src="lib/jwt-decode.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/scanner.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

@@ -14,9 +14,19 @@ html, body { margin: 0; padding: 0; text-align: center;}
     font-family: 'Open Sans';
 }
 
+.wth {
+    margin-right: auto; margin-left: auto; width: 350px;
+}
+
 .search-results {
     width: 500px;
     height: 100px;
     margin-right: auto; margin-left: auto;
     margin-top: 60px;
+}
+
+.hiddenfile {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
 }

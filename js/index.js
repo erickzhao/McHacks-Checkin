@@ -29,6 +29,7 @@ $(document).ready(function() {
   });
 });
 
+var markup = '<div class="item"> <div class="content"> <a class="header">${profile.name}</a> <div class="meta"> ${profile.school}</div><div class="extra"> <div class="ui right floated primary button" onclick="drawLabel(\'${profile.name}\', \'${profile.school}\', \'${_id}\')"> Print & Checkin <i class="right chevron icon"></i> </div></div></div></div>';
 
 function execSearch(query) {
   if (query == '') {
@@ -36,7 +37,6 @@ function execSearch(query) {
     return;
   }
 
-  var markup = '<div class="item"> <div class="content"> <a class="header">${profile.name}</a> <div class="meta"> ${profile.school}</div><div class="extra"> <div class="ui right floated primary button" onclick="drawLabel(\'${profile.name}\', \'${profile.school}\', \'${_id}\')"> Print & Checkin <i class="right chevron icon"></i> </div></div></div></div>';
   $.template("searchResult", markup);
   apiCall(API_ROOT + '/api/users', {
     text: query,
@@ -54,6 +54,23 @@ function execSearch(query) {
     console.log(filteredUsers);
     $('#results').html('');
     $.tmpl("searchResult", filteredUsers).appendTo("#results");
+  }, function(err) {
+    redirectToReg();
+  });
+}
+
+function execSearchSize(query) {
+  if (query == '') {
+    $('#results').html('');
+    return;
+  }
+
+  $.template("searchResult", markup);
+  return apiCall(API_ROOT + '/api/users', {
+    text: query,
+    page: 0,
+    size: 50
+  }, function(data, code) {
   }, function(err) {
     redirectToReg();
   });

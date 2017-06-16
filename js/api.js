@@ -11,7 +11,7 @@ function getRedirectURL() {
 }
 
 function apiCall(url, data, callback, error) {
-    $.get({url: url,
+    return $.get({url: url,
                  beforeSend: function (xhr) {
                     xhr.setRequestHeader("x-access-token", getStoredJWT());
                  },

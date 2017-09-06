@@ -12,9 +12,9 @@ var API_ROOT = "https://my.jankhack.party";
 /*
 Should I use the ID scanner API?
 */
-var ENABLE_SCANNER = false;
+var ENABLE_SCANNER = true;
 
 /*
 TechX's internal scanner API endpoint
 */
-var SCANNER_API = ""
+var SCANNER_API = "http://localhost:5000/cardscanner"

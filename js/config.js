@@ -7,7 +7,7 @@ The registartion system's API endpoint without trailing forward-slash
 /orders /users and /auth/login are used.
 
 */
-var API_ROOT = "https://my.hackmit.org";
+var API_ROOT = "https://registration.mchacks.ca";
 
 /*
 Should I use the ID scanner API?

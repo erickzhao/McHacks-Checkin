@@ -7,12 +7,12 @@ The registartion system's API endpoint without trailing forward-slash
 /orders /users and /auth/login are used.
 
 */
-var API_ROOT = "https://my.jankhack.party";
+var API_ROOT = "https://registration.mchacks.ca";
 
 /*
 Should I use the ID scanner API?
 */
-var ENABLE_SCANNER = true;
+var ENABLE_SCANNER = false;
 
 /*
 TechX's internal scanner API endpoint

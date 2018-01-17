@@ -8,7 +8,7 @@
   <body>
     <div class="dont-print">
       <canvas id="labelCanvas" width="520" height="299" style="border-style: none; display: none;"></canvas>
-      <p class="header-text">Check-In</p>
+      <p class="header-text">mchacks Check-In</p>
       <table border="0" class="wth">
         <tr>
           <td>
@@ -17,10 +17,10 @@
               <i class="search icon"></i>
             </div>
           </td>
-          <td>
-            <button class="ui icon button upload-image">
-              <i class="photo icon"></i>
-            </button>
+          <td style="padding-left:30px;">
+            <div class="ui negative basic button" onclick="doLogout();">
+             Logout
+            </div>
           </td>
         </tr>
       </table>
@@ -29,20 +29,6 @@
       </div>
       <div class="search-results">
         <div class="ui relaxed divided items" id="results">
-          <!-- <div class="item">
-            <div class="content">
-              <a class="header">${Name}</a>
-              <div class="meta">
-                ${School}
-              </div>
-              <div class="extra">
-                <div class="ui right floated primary button">
-                  Print Label
-                  <i class="right chevron icon"></i>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -56,5 +42,6 @@
     <script src="js/api.js"></script>
     <script src="js/scanner.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/logout.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 /* The name that'll be displayed on app */
-var APP_NAME = "mchacks Check-In";
+var APP_NAME = "McHacks Check-In";
 
 /*
 
@@ -14,17 +14,17 @@ Should I use the ID scanner API?
 */
 var ENABLE_SCANNER = false;
 
-/*
-TechX's internal scanner API endpoint
-*/
-var SCANNER_API = "http://localhost:5000/cardscanner"
+// /*
+// TechX's internal scanner API endpoint
+// */
+// var SCANNER_API = "http://localhost:5000/cardscanner"
 
-/*
-Endpoint for NFC
-*/
-var NFCDB_EP = 'http://localhost:5000/add_tag';
+// /*
+// Endpoint for NFC
+// */
+// var NFCDB_EP = 'http://localhost:5000/add_tag';
 
-/*
-Secret for NFC
-*/
-var NFCDB_SECRET = 'ihaveafewdevrequests';
+// /*
+// Secret for NFC
+// */
+// var NFCDB_SECRET = 'ihaveafewdevrequests';

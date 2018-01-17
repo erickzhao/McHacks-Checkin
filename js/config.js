@@ -1,5 +1,5 @@
 /* The name that'll be displayed on app */
-var APP_NAME = "Check-In";
+var APP_NAME = "mchacks Check-In";
 
 /*
 

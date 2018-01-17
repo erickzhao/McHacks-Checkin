@@ -17,7 +17,7 @@ function apiCall(url, data, callback, error) {
                  },
                  data: data,
                  success: callback,
-               error: error });
+                 error: error });
 }
 
 function apiCallPost(url, data, callback, error) {
@@ -27,7 +27,7 @@ function apiCallPost(url, data, callback, error) {
                  },
                  data: data,
                  success: callback,
-               error: error });
+                 error: error });
 }
 
 function validateJWT(success) {
@@ -38,7 +38,8 @@ function validateJWT(success) {
     },
     function(data, code) {
         if (code == "error") {
-            redirectToReg();
+            // redirectToReg();
+            console.log("Ignore It, No cross-origin occured!");
         }
     });
 }

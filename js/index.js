@@ -87,11 +87,11 @@ function drawLabel(name, school, id) {
   // Clear canvas 
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.fillStyle = '#000';
-  context.font = '300 40px Josefin Sans';
+  context.font = '300 45px Josefin Sans';
   context.fillText(name, canvas.width / 2 - context.measureText(name).width / 2, 90);
-  context.fillStyle = '#ABABAB';
-  context.font = '300 25px Josefin Sans';
-  context.fillText(school, canvas.width / 2 - context.measureText(school).width / 2, 130);
+  // context.fillStyle = '#ABABAB';
+  context.font = '300 32px Josefin Sans';
+  context.fillText(school, canvas.width / 2 - context.measureText(school).width / 2, 150);
 
   apiCallPost(API_ROOT + '/api/users/' + id + '/checkin', undefined, function () {
     var image = new Image();
